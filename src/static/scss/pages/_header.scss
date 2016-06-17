@@ -1,0 +1,43 @@
+.l-header {
+  background-color: $color-dark-gray;
+  padding: 30px 0;
+  @extend .clearfix;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
+}
+
+.l-logo {
+  float: left;
+  padding-top: 7px;
+}
+
+.l-navbar {
+  float: right;
+  line-height: 3em;
+
+
+}
+
+.l-navbar--item {
+  display: inline-block;
+  padding: 0 10px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  a {
+    font-size: 14px;;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+.l-navbar--item__active {
+  border: 1px solid #fff;
+  line-height: 1em;
+  padding: 10px 15px;
+  background-color: #2f2d2a;
+}

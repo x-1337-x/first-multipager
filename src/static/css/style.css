@@ -1,3 +1,79 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,600);
+.icon-Flag-Icon {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -32px;
+  width: 31px;
+  height: 29px; }
+
+.icon-Scroll-Down-Icon {
+  background-image: url(../i/sprite.png);
+  background-position: -61px -32px;
+  width: 18px;
+  height: 11px; }
+
+.icon-Trendy-Logo {
+  background-image: url(../i/sprite.png);
+  background-position: 0px 0px;
+  width: 102px;
+  height: 32px; }
+
+.icon-building {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -61px;
+  width: 26px;
+  height: 33px; }
+
+.icon-cup {
+  background-image: url(../i/sprite.png);
+  background-position: -31px -32px;
+  width: 30px;
+  height: 29px; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,19 +122,249 @@ table {
   border-spacing: 0; }
 
 body, html {
-  height: 100%; }
+  height: 100%;
+  min-width: 1170px; }
 
 body {
-  font: normal 16px/1.4 Arial, sans-serif; }
+  font: normal 16px/1.4 Open Sans, Arial, sans-serif; }
 
-.p-home {
-  padding: 20px 0; }
+* {
+  box-sizing: border-box;
+  outline: none; }
 
-.p-home--promo {
-  background: #e0e0e0;
-  padding: 20px; }
+.wrapper {
+  width: 1170px;
+  margin: auto; }
 
-.p-home--teasers {
-  margin: 20px 0;
-  padding: 20px;
-  background: #e0e0e0; }
+.icon {
+  display: inline-block; }
+
+a {
+  text-decoration: none; }
+
+.clearfix:before, .l-header:before, .l-about:before, .l-about--diagram:before,
+.clearfix:after,
+.l-header:after,
+.l-about:after,
+.l-about--diagram:after {
+  content: "";
+  display: table; }
+
+.clearfix:after, .l-header:after, .l-about:after, .l-about--diagram:after {
+  clear: both; }
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.header-dark {
+  font-size: 56px;
+  color: #000; }
+
+.description-dark {
+  font-size: 16px;
+  color: #000; }
+
+.header-light {
+  font-size: 56px;
+  color: #fff; }
+
+.description-light {
+  font-size: 16px;
+  color: #fff; }
+
+.c-btn {
+  color: #fff;
+  line-height: 3em;
+  padding: 10px 45px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #c59a6d; }
+
+.l-header {
+  background-color: #2c2b2a;
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10000; }
+
+.l-logo {
+  float: left;
+  padding-top: 7px; }
+
+.l-navbar {
+  float: right;
+  line-height: 3em; }
+
+.l-navbar--item {
+  display: inline-block;
+  padding: 0 10px; }
+  .l-navbar--item:last-child {
+    padding-right: 0; }
+  .l-navbar--item a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff; }
+
+.l-navbar--item__active {
+  border: 1px solid #fff;
+  line-height: 1em;
+  padding: 10px 15px;
+  background-color: #2f2d2a; }
+
+.l-hero {
+  background-color: #2c2b2a;
+  margin-top: 109px;
+  padding: 50px 0;
+  text-align: center;
+  vertical-align: middle; }
+
+.l-hero--header {
+  font-size: 128px;
+  color: #fff; }
+
+.l-hero--description {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 45px; }
+
+.l-hero--divider {
+  width: 170px;
+  border: 2px solid #c69b6e;
+  display: inline-block; }
+
+.l-hero--scrolldown {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  border: 1px solid #fff;
+  padding-top: 8px;
+  margin-top: 175px; }
+
+.l-about {
+  padding: 100px 0;
+  text-align: center;
+  vertical-align: middle; }
+
+.l-about--company {
+  padding: 70px 0 95px 0; }
+
+.l-about--diagram {
+  height: auto;
+  width: 1070px;
+  text-align: center;
+  margin: 0 auto; }
+
+.l-about--history-card {
+  display: block;
+  width: 430px;
+  float: left;
+  clear: both;
+  position: relative;
+  padding: 50px 0; }
+
+.l-about--history-card-container {
+  border: 1px solid  #ccc;
+  padding: 30px; }
+
+.l-about--history-card:nth-child(2n) {
+  float: right;
+  text-align: right; }
+
+.l-about--history-card:after {
+  top: 50%;
+  height: 50%;
+  content: '';
+  border: 1px solid #ccc;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  right: -11px;
+  top: 0;
+  z-index: 2; }
+
+.l-about--history-card:nth-child(2n):after {
+  right: auto;
+  left: -108px; }
+
+.l-about--history-card:nth-child(2n+1):after {
+  left: auto;
+  right: -104px; }
+
+.l-about--history-card:first-child:after {
+  top: 50%;
+  height: 50%;
+  right: -104px; }
+
+.l-about--history-card:last-child:after {
+  top: 0%;
+  right: -104px; }
+
+.l-about--history-card-pictogram {
+  border: 1px solid  #ccc;
+  display: block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding: 20px 0;
+  float: left;
+  margin-right: 30px; }
+
+.l-about--history-card-text {
+  width: 250px;
+  overflow: auto;
+  text-align: justify; }
+
+.l-about--history-card-year {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-left: 47px;
+  z-index: 5; }
+
+.l-about--history-card-year:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  background: #c59a6d;
+  left: 0;
+  top: 6px;
+  margin-left: 50px;
+  z-index: 5; }
+
+.l-about--history-card:nth-child(2n) .l-about--history-card-year {
+  left: auto;
+  right: 100%;
+  margin-left: 0;
+  margin-right: 51px; }
+
+.l-about--history-card:nth-child(2n) .l-about--history-card-year:before {
+  left: auto;
+  right: 0;
+  margin-right: 50px;
+  margin-left: 0; }
+
+.l-about--history-card-header,
+.l-about--history-card-year {
+  font-size: 18px;
+  color: #c59a6d;
+  font-weight: bold; }
+
+.l-about--history-card-story {
+  font-size: 14px;
+  margin-top: 30px; }
+
+.l-about--diagram--button-more:hover {
+  cursor: hand; }
+
+.l-about--divider {
+  width: 170px;
+  border: 1px solid  #ccc;
+  display: inline-block; }
+
+.l-about--team {
+  padding-top: 95px; }

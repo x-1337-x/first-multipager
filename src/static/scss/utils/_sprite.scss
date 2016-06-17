@@ -1,0 +1,140 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-flag-icon-name: 'icon-Flag-Icon';
+$icon-flag-icon-x: 0px;
+$icon-flag-icon-y: 32px;
+$icon-flag-icon-offset-x: 0px;
+$icon-flag-icon-offset-y: -32px;
+$icon-flag-icon-width: 31px;
+$icon-flag-icon-height: 29px;
+$icon-flag-icon-total-width: 102px;
+$icon-flag-icon-total-height: 94px;
+$icon-flag-icon-image: '../i/sprite.png';
+$icon-flag-icon: (0px, 32px, 0px, -32px, 31px, 29px, 102px, 94px, '../i/sprite.png', 'icon-Flag-Icon', );
+$icon-scroll-down-icon-name: 'icon-Scroll-Down-Icon';
+$icon-scroll-down-icon-x: 61px;
+$icon-scroll-down-icon-y: 32px;
+$icon-scroll-down-icon-offset-x: -61px;
+$icon-scroll-down-icon-offset-y: -32px;
+$icon-scroll-down-icon-width: 18px;
+$icon-scroll-down-icon-height: 11px;
+$icon-scroll-down-icon-total-width: 102px;
+$icon-scroll-down-icon-total-height: 94px;
+$icon-scroll-down-icon-image: '../i/sprite.png';
+$icon-scroll-down-icon: (61px, 32px, -61px, -32px, 18px, 11px, 102px, 94px, '../i/sprite.png', 'icon-Scroll-Down-Icon', );
+$icon-trendy-logo-name: 'icon-Trendy-Logo';
+$icon-trendy-logo-x: 0px;
+$icon-trendy-logo-y: 0px;
+$icon-trendy-logo-offset-x: 0px;
+$icon-trendy-logo-offset-y: 0px;
+$icon-trendy-logo-width: 102px;
+$icon-trendy-logo-height: 32px;
+$icon-trendy-logo-total-width: 102px;
+$icon-trendy-logo-total-height: 94px;
+$icon-trendy-logo-image: '../i/sprite.png';
+$icon-trendy-logo: (0px, 0px, 0px, 0px, 102px, 32px, 102px, 94px, '../i/sprite.png', 'icon-Trendy-Logo', );
+$icon-building-name: 'icon-building';
+$icon-building-x: 0px;
+$icon-building-y: 61px;
+$icon-building-offset-x: 0px;
+$icon-building-offset-y: -61px;
+$icon-building-width: 26px;
+$icon-building-height: 33px;
+$icon-building-total-width: 102px;
+$icon-building-total-height: 94px;
+$icon-building-image: '../i/sprite.png';
+$icon-building: (0px, 61px, 0px, -61px, 26px, 33px, 102px, 94px, '../i/sprite.png', 'icon-building', );
+$icon-cup-name: 'icon-cup';
+$icon-cup-x: 31px;
+$icon-cup-y: 32px;
+$icon-cup-offset-x: -31px;
+$icon-cup-offset-y: -32px;
+$icon-cup-width: 30px;
+$icon-cup-height: 29px;
+$icon-cup-total-width: 102px;
+$icon-cup-total-height: 94px;
+$icon-cup-image: '../i/sprite.png';
+$icon-cup: (31px, 32px, -31px, -32px, 30px, 29px, 102px, 94px, '../i/sprite.png', 'icon-cup', );
+$spritesheet-width: 102px;
+$spritesheet-height: 94px;
+$spritesheet-image: '../i/sprite.png';
+$spritesheet-sprites: ($icon-flag-icon, $icon-scroll-down-icon, $icon-trendy-logo, $icon-building, $icon-cup, );
+$spritesheet: (102px, 94px, '../i/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

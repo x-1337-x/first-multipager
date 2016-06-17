@@ -1,7 +1,62 @@
 body, html {
   height: 100%;
+  min-width: 1170px;
 }
 
 body {
-  font: normal 16px/1.4 Arial, sans-serif;
+  font: normal 16px/1.4 Open Sans, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.wrapper {
+  width: 1170px;
+  margin: auto;
+}
+
+.icon {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+
+.clearfix:after {
+  clear: both;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-dark {
+  font-size: 56px;
+  color: #000;
+}
+
+.description-dark {
+  font-size: 16px;
+  color: #000;
+}
+
+.header-light {
+  font-size: 56px;
+  color: #fff;
+}
+
+.description-light {
+  font-size: 16px;
+  color: #fff;
 }

@@ -1,0 +1,153 @@
+.l-about {
+  padding: 100px 0;
+  text-align: center;
+  vertical-align: middle;
+  @extend .clearfix;
+}
+
+.l-about--company {
+  padding: 70px 0 95px 0;
+}
+
+.l-about--diagram {
+  height: auto;
+  width: 1070px;
+  text-align: center;
+  @extend .clearfix;
+  margin: 0 auto;
+}
+
+.l-about--history-card {
+  display: block;
+  width: 430px;
+  float: left;
+  clear: both;
+  position: relative;
+  padding: 50px 0;
+}
+
+.l-about--history-card-container {
+  border: 1px solid  #ccc;
+  padding: 30px;
+
+}
+
+.l-about--history-card:nth-child(2n){
+  float: right;
+  text-align: right;
+}
+
+.l-about--history-card:after {
+  top: 50%;
+  height: 50%;
+  content: '';
+  border: 1px solid #ccc;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  right: -11px;
+  top: 0;
+  z-index: 2;
+}
+
+.l-about--history-card:nth-child(2n):after {
+  right: auto;
+  left: -108px;
+}
+
+.l-about--history-card:nth-child(2n+1):after {
+  left: auto;
+  right: -104px;
+}
+
+.l-about--history-card:first-child:after {
+  top: 50%;
+  height: 50%;
+  right: -104px;
+}
+.l-about--history-card:last-child:after {
+  top: 0%;
+  right: -104px;
+}
+
+.l-about--history-card-pictogram {
+  border: 1px solid  #ccc;
+  display: block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding: 20px 0;
+  float: left;
+  margin-right: 30px;
+}
+
+.l-about--history-card-text {
+  width: 250px;
+  overflow: auto;
+  text-align: justify;
+}
+
+.l-about--history-card-year {
+  position: absolute;
+  left: 100%;   
+  top: 50%;
+  margin-left: 47px;
+  z-index: 5;
+}
+.l-about--history-card-year:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  background: $color-light-brown;
+  left: 0;
+  top: 6px;
+  margin-left: 50px;
+  z-index: 5;
+}
+
+.l-about--history-card:nth-child(2n) .l-about--history-card-year {
+  left: auto;
+  right: 100%;
+  margin-left: 0;
+  margin-right: 51px;
+}
+
+.l-about--history-card:nth-child(2n) .l-about--history-card-year:before {
+  left: auto;
+  right: 0;
+  margin-right: 50px;
+  margin-left: 0;
+}
+
+.l-about--history-card-header,
+.l-about--history-card-year {
+  font-size: 18px;
+  color: $color-light-brown;
+  font-weight: bold;
+}
+
+.l-about--history-card-story {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.l-about--diagram--button-more {
+
+  &:hover {
+    cursor: hand;
+  }
+}
+
+.l-about--divider {
+  width: 170px;
+  border: 1px solid  #ccc;
+  display: inline-block;
+}
+
+// ABOUT TEAM
+
+.l-about--team {
+  padding-top: 95px;
+}
