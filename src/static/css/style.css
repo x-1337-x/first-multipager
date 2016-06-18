@@ -50,9 +50,21 @@ The `sprites` mixin generates identical output to the CSS template
   width: 31px;
   height: 29px; }
 
-.icon-Scroll-Down-Icon {
+.icon-Next-Icon {
+  background-image: url(../i/sprite.png);
+  background-position: -72px -32px;
+  width: 11px;
+  height: 19px; }
+
+.icon-Previous-Icon {
   background-image: url(../i/sprite.png);
   background-position: -61px -32px;
+  width: 11px;
+  height: 19px; }
+
+.icon-Scroll-Down-Icon {
+  background-image: url(../i/sprite.png);
+  background-position: -83px -32px;
   width: 18px;
   height: 11px; }
 
@@ -76,31 +88,31 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-facebook-sm {
   background-image: url(../i/sprite.png);
-  background-position: -39px -61px;
+  background-position: -78px -61px;
   width: 9px;
   height: 13px; }
 
 .icon-gplus-sm {
   background-image: url(../i/sprite.png);
-  background-position: -61px -43px;
+  background-position: -52px -61px;
   width: 13px;
   height: 13px; }
 
 .icon-linkedin-sm {
   background-image: url(../i/sprite.png);
-  background-position: -74px -43px;
+  background-position: -26px -61px;
   width: 13px;
   height: 13px; }
 
 .icon-pinterest-sm {
   background-image: url(../i/sprite.png);
-  background-position: -87px -43px;
+  background-position: -39px -61px;
   width: 13px;
   height: 13px; }
 
 .icon-twitter-sm {
   background-image: url(../i/sprite.png);
-  background-position: -26px -61px;
+  background-position: -65px -61px;
   width: 13px;
   height: 13px; }
 
@@ -403,15 +415,16 @@ a {
 
 .l-about--team--gallery {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 70px; }
 
 .l-about--team--gallery-item {
   margin: 15px; }
 
-.l-about--team--gallery-item-picture {
+.l-about--team--gallery-item--picture {
   border: 1px solid  #ccc;
   padding: 9px; }
-  .l-about--team--gallery-item-picture a {
+  .l-about--team--gallery-item--picture a {
     display: block;
     line-height: 0; }
 
@@ -431,3 +444,70 @@ a {
 .l-about--team--gallery-item-social {
   padding: 5px 0;
   text-align: left; }
+
+.l-works {
+  padding: 100px 0;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #1b1a18; }
+
+.l-works--gallery {
+  padding-top: 70px; }
+
+.l-works--gallery-content {
+  padding-bottom: 50px; }
+
+.l-works--gallery-content {
+  display: flex;
+  justify-content: center; }
+
+.l-works--gallery-item {
+  margin: 15px; }
+
+.l-works--gallery-item--picture {
+  border: 1px solid  #555555;
+  padding: 14px; }
+  .l-works--gallery-item--picture a {
+    display: block;
+    line-height: 0; }
+
+.l-works--gallery-item--name {
+  font-size: 18px;
+  color: #c59a6d;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  line-height: 3em;
+  padding-top: 10px; }
+
+.l-works--gallery-item--divider {
+  width: 70px;
+  border-bottom: 1px solid #c59a6d; }
+
+.l-works--gallery-item--category {
+  font-size: 14px;
+  color: #ccc;
+  display: block;
+  text-align: left;
+  line-height: 3em; }
+
+.l-works--gallery--controls--leftarrow,
+.l-works--gallery--controls--rightarrow {
+  border: 1px solid  #fff;
+  display: inline-block;
+  margin: 15px; }
+  .l-works--gallery--controls--leftarrow a,
+  .l-works--gallery--controls--rightarrow a {
+    display: block;
+    padding: 20px 26px; }
+
+.l-works--gallery--indicator--dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid  #fff;
+  margin: 0 5px; }
+
+.l-works--gallery--indicator--dot__current {
+  border: 1px solid #c59a6d;
+  background-color: #c59a6d; }

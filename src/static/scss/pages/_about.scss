@@ -155,13 +155,14 @@
 .l-about--team--gallery {
   display: flex;
   justify-content: center;
+  padding-top: 70px;
 }
 
 .l-about--team--gallery-item {
   margin: 15px;
 }
 
-.l-about--team--gallery-item-picture {
+.l-about--team--gallery-item--picture {
   border: 1px solid  #ccc;
   padding: 9px;
 
