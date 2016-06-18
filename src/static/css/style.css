@@ -74,6 +74,36 @@ The `sprites` mixin generates identical output to the CSS template
   width: 30px;
   height: 29px; }
 
+.icon-facebook-sm {
+  background-image: url(../i/sprite.png);
+  background-position: -39px -61px;
+  width: 9px;
+  height: 13px; }
+
+.icon-gplus-sm {
+  background-image: url(../i/sprite.png);
+  background-position: -61px -43px;
+  width: 13px;
+  height: 13px; }
+
+.icon-linkedin-sm {
+  background-image: url(../i/sprite.png);
+  background-position: -74px -43px;
+  width: 13px;
+  height: 13px; }
+
+.icon-pinterest-sm {
+  background-image: url(../i/sprite.png);
+  background-position: -87px -43px;
+  width: 13px;
+  height: 13px; }
+
+.icon-twitter-sm {
+  background-image: url(../i/sprite.png);
+  background-position: -26px -61px;
+  width: 13px;
+  height: 13px; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -158,22 +188,6 @@ a {
   overflow: hidden;
   text-overflow: ellipsis; }
 
-.header-dark {
-  font-size: 56px;
-  color: #000; }
-
-.description-dark {
-  font-size: 16px;
-  color: #000; }
-
-.header-light {
-  font-size: 56px;
-  color: #fff; }
-
-.description-light {
-  font-size: 16px;
-  color: #fff; }
-
 .c-btn {
   color: #fff;
   line-height: 3em;
@@ -181,6 +195,24 @@ a {
   font-size: 18px;
   font-weight: bold;
   background-color: #c59a6d; }
+
+.c-header-dark {
+  font-size: 56px;
+  color: #000; }
+
+.c-description-dark {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000; }
+
+.c-header-light {
+  font-size: 56px;
+  color: #fff; }
+
+.c-description-light {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff; }
 
 .l-header {
   background-color: #2c2b2a;
@@ -294,7 +326,7 @@ a {
   right: -104px; }
 
 .l-about--history-card:first-child:after {
-  top: 50%;
+  top: 55%;
   height: 50%;
   right: -104px; }
 
@@ -368,3 +400,34 @@ a {
 
 .l-about--team {
   padding-top: 95px; }
+
+.l-about--team--gallery {
+  display: flex;
+  justify-content: center; }
+
+.l-about--team--gallery-item {
+  margin: 15px; }
+
+.l-about--team--gallery-item-picture {
+  border: 1px solid  #ccc;
+  padding: 9px; }
+  .l-about--team--gallery-item-picture a {
+    display: block;
+    line-height: 0; }
+
+.l-about--team--gallery-item-text {
+  padding-top: 20px;
+  text-align: left; }
+
+.l-about--team--gallery-item-text--name {
+  font-size: 16px;
+  color: #c59a6d;
+  font-weight: bold; }
+
+.l-about--team--gallery-item-text--title {
+  font-size: 14px;
+  color: #777; }
+
+.l-about--team--gallery-item-social {
+  padding: 5px 0;
+  text-align: left; }
