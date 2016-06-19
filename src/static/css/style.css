@@ -44,75 +44,93 @@ The `sprites` mixin generates identical output to the CSS template
 @include sprites($spritesheet-sprites);
 */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,600);
+.icon-Developing-Icon {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -60px;
+  width: 60px;
+  height: 60px; }
+
 .icon-Flag-Icon {
   background-image: url(../i/sprite.png);
-  background-position: 0px -32px;
+  background-position: -120px -32px;
   width: 31px;
   height: 29px; }
 
 .icon-Next-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -72px -32px;
+  background-position: -181px -32px;
   width: 11px;
   height: 19px; }
 
 .icon-Previous-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -61px -32px;
+  background-position: -192px -32px;
   width: 11px;
   height: 19px; }
 
 .icon-Scroll-Down-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -83px -32px;
+  background-position: -203px -32px;
   width: 18px;
   height: 11px; }
 
 .icon-Trendy-Logo {
   background-image: url(../i/sprite.png);
-  background-position: 0px 0px;
+  background-position: -120px 0px;
   width: 102px;
   height: 32px; }
 
 .icon-building {
   background-image: url(../i/sprite.png);
-  background-position: 0px -61px;
+  background-position: -120px -61px;
   width: 26px;
   height: 33px; }
 
 .icon-cup {
   background-image: url(../i/sprite.png);
-  background-position: -31px -32px;
+  background-position: -151px -32px;
   width: 30px;
   height: 29px; }
 
+.icon-desktop {
+  background-image: url(../i/sprite.png);
+  background-position: -60px 0px;
+  width: 60px;
+  height: 60px; }
+
 .icon-facebook-sm {
   background-image: url(../i/sprite.png);
-  background-position: -78px -61px;
+  background-position: -198px -61px;
   width: 9px;
   height: 13px; }
 
 .icon-gplus-sm {
   background-image: url(../i/sprite.png);
-  background-position: -52px -61px;
+  background-position: -146px -61px;
   width: 13px;
   height: 13px; }
 
+.icon-light-bulb {
+  background-image: url(../i/sprite.png);
+  background-position: 0px 0px;
+  width: 60px;
+  height: 60px; }
+
 .icon-linkedin-sm {
   background-image: url(../i/sprite.png);
-  background-position: -26px -61px;
+  background-position: -159px -61px;
   width: 13px;
   height: 13px; }
 
 .icon-pinterest-sm {
   background-image: url(../i/sprite.png);
-  background-position: -39px -61px;
+  background-position: -172px -61px;
   width: 13px;
   height: 13px; }
 
 .icon-twitter-sm {
   background-image: url(../i/sprite.png);
-  background-position: -65px -61px;
+  background-position: -185px -61px;
   width: 13px;
   height: 13px; }
 
@@ -196,7 +214,7 @@ a {
   clear: both; }
 
 .truncate {
-  white-space: nowrap;
+  white-space: wrap;
   overflow: hidden;
   text-overflow: ellipsis; }
 
@@ -255,8 +273,10 @@ a {
 .l-navbar--item__active {
   border: 1px solid #fff;
   line-height: 1em;
-  padding: 10px 15px;
   background-color: #2f2d2a; }
+  .l-navbar--item__active a {
+    display: block;
+    padding: 10px 15px; }
 
 .l-hero {
   background-color: #2c2b2a;
@@ -407,7 +427,7 @@ a {
 
 .l-about--divider {
   width: 170px;
-  border: 1px solid  #ccc;
+  border-bottom: 1px solid  #ccc;
   display: inline-block; }
 
 .l-about--team {
@@ -511,3 +531,87 @@ a {
 .l-works--gallery--indicator--dot__current {
   border: 1px solid #c59a6d;
   background-color: #c59a6d; }
+
+.l-services {
+  padding: 100px 0;
+  text-align: center;
+  vertical-align: middle; }
+
+.l-services--portfolio {
+  display: flex;
+  justify-content: space-between;
+  padding: 95px 0; }
+
+.l-services--portfolio-item {
+  max-width: 290px;
+  vertical-align: middle;
+  text-align: center; }
+  .l-services--portfolio-item * {
+    display: block; }
+
+.l-services--portfolio-item--picture {
+  border: 1px solid  #ccc;
+  display: inline-block; }
+  .l-services--portfolio-item--picture a {
+    display: block;
+    line-height: 0;
+    padding: 40px; }
+
+.l-services--portfolio-item--caption, .l-services--rates-item--name {
+  font-size: 18px;
+  color: #c59a6d;
+  font-weight: bold;
+  display: block;
+  line-height: 3em;
+  padding-top: 10px;
+  overflow: hidden; }
+
+.l-services--portfolio-item--text {
+  font-size: 14px;
+  overflow: hidden;
+  max-height: 200px; }
+
+.l-services--divider {
+  width: 170px;
+  border-bottom: 1px solid  #ccc;
+  display: inline-block; }
+
+.l-services--prices {
+  padding-top: 100px; }
+
+.l-services--rates {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px; }
+
+.l-services--rates-item {
+  padding: 50px 30px;
+  margin: 25px 15px;
+  background-color: #f6f6f6;
+  border: 1px solid transparent;
+  transition: 0.2s ease; }
+  .l-services--rates-item:hover {
+    padding: 75px 30px;
+    background-color: #fff;
+    margin: 0 15px;
+    border: 1px solid  #ccc; }
+
+.l-services--rates-item--name {
+  padding: 0; }
+
+.l-services--rates-item--price {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.1; }
+  .l-services--rates-item--price span {
+    display: block;
+    font-size: 14px; }
+
+.l-services--rates-item--divider {
+  border-bottom: 1px solid #c59a6d;
+  width: 70px;
+  display: inline-block; }
+
+.l-services--rates-item--description {
+  font-size: 14px;
+  line-height: 3em; }
