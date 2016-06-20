@@ -62,9 +62,15 @@ The `sprites` mixin generates identical output to the CSS template
   width: 60px;
   height: 60px; }
 
-.icon-Flag-Icon {
+.icon-Emails-Icon {
   background-image: url(../i/sprite.png);
   background-position: -171px -81px;
+  width: 48px;
+  height: 39px; }
+
+.icon-Flag-Icon {
+  background-image: url(../i/sprite.png);
+  background-position: -38px -120px;
   width: 31px;
   height: 29px; }
 
@@ -80,15 +86,27 @@ The `sprites` mixin generates identical output to the CSS template
   width: 11px;
   height: 19px; }
 
+.icon-Office-Address-Icon {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -158px;
+  width: 28px;
+  height: 42px; }
+
+.icon-Phones-Icon {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -120px;
+  width: 38px;
+  height: 38px; }
+
 .icon-Previous-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -202px -81px;
+  background-position: -71px -95px;
   width: 11px;
   height: 19px; }
 
 .icon-Scroll-Down-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -71px -95px;
+  background-position: -82px -95px;
   width: 18px;
   height: 11px; }
 
@@ -106,13 +124,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-building {
   background-image: url(../i/sprite.png);
-  background-position: 0px -149px;
+  background-position: -28px -158px;
   width: 26px;
   height: 33px; }
 
 .icon-cup {
   background-image: url(../i/sprite.png);
-  background-position: 0px -120px;
+  background-position: -69px -120px;
   width: 30px;
   height: 29px; }
 
@@ -124,13 +142,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-facebook-sm {
   background-image: url(../i/sprite.png);
-  background-position: -213px -81px;
+  background-position: -151px -120px;
   width: 9px;
   height: 13px; }
 
 .icon-gplus-sm {
   background-image: url(../i/sprite.png);
-  background-position: -56px -120px;
+  background-position: -112px -120px;
   width: 13px;
   height: 13px; }
 
@@ -142,19 +160,19 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-linkedin-sm {
   background-image: url(../i/sprite.png);
-  background-position: -43px -120px;
+  background-position: -125px -120px;
   width: 13px;
   height: 13px; }
 
 .icon-pinterest-sm {
   background-image: url(../i/sprite.png);
-  background-position: -30px -120px;
+  background-position: -138px -120px;
   width: 13px;
   height: 13px; }
 
 .icon-twitter-sm {
   background-image: url(../i/sprite.png);
-  background-position: -69px -120px;
+  background-position: -99px -120px;
   width: 13px;
   height: 13px; }
 
@@ -226,16 +244,17 @@ body {
 a {
   text-decoration: none; }
 
-.clearfix:before, .l-header:before, .l-about:before, .l-about--diagram:before, .l-trivia--stats-item:before,
+.clearfix:before, .l-header:before, .l-about:before, .l-about--diagram:before, .l-trivia--stats-item:before, .l-find-us--address-item:before,
 .clearfix:after,
 .l-header:after,
 .l-about:after,
 .l-about--diagram:after,
-.l-trivia--stats-item:after {
+.l-trivia--stats-item:after,
+.l-find-us--address-item:after {
   content: "";
   display: table; }
 
-.clearfix:after, .l-header:after, .l-about:after, .l-about--diagram:after, .l-trivia--stats-item:after {
+.clearfix:after, .l-header:after, .l-about:after, .l-about--diagram:after, .l-trivia--stats-item:after, .l-find-us--address-item:after {
   clear: both; }
 
 .truncate {
@@ -788,3 +807,36 @@ a {
 
 .l-contact--form--button {
   padding-top: 75px; }
+
+.l-find-us {
+  padding: 100px 0;
+  text-align: center;
+  vertical-align: middle;
+  background-image: url("../i/footer-dummy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.l-find-us--address {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-around; }
+
+.l-find-us--address-item {
+  min-width: 200px; }
+
+.l-find-us--address-item--pic {
+  float: left; }
+
+.l-find-us--address-item--data {
+  text-align: left;
+  float: right; }
+
+.l-find-us--address-item--title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #c59a6d; }
+
+.l-find-us--address-item--text {
+  font-size: 14px;
+  color: #fff; }

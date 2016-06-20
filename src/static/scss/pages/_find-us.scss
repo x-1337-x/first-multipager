@@ -1,0 +1,41 @@
+.l-find-us {
+  padding: 100px 0;
+  text-align: center;
+  vertical-align: middle;
+  background-image: url('../i/footer-dummy.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.l-find-us--address {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.l-find-us--address-item {
+  min-width: 200px;
+  @extend .clearfix;
+
+}
+
+.l-find-us--address-item--pic {
+  float: left;
+}
+
+.l-find-us--address-item--data {
+  text-align: left;
+  float: right;
+}
+
+.l-find-us--address-item--title {
+  font-size: 16px;
+  font-weight: 700;
+  color: $color-light-brown;
+}
+
+.l-find-us--address-item--text {
+  font-size: 14px;
+  color: #fff;
+}
