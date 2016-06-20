@@ -44,6 +44,18 @@ The `sprites` mixin generates identical output to the CSS template
 @include sprites($spritesheet-sprites);
 */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,600);
+.icon-Awesome-Projects {
+  background-image: url(../i/sprite.png);
+  background-position: -172px -32px;
+  width: 48px;
+  height: 49px; }
+
+.icon-Coffees-Drinked {
+  background-image: url(../i/sprite.png);
+  background-position: -120px -81px;
+  width: 51px;
+  height: 39px; }
+
 .icon-Developing-Icon {
   background-image: url(../i/sprite.png);
   background-position: 0px -60px;
@@ -52,25 +64,31 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-Flag-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -120px -32px;
+  background-position: -171px -81px;
   width: 31px;
   height: 29px; }
 
+.icon-Happy-Clients-Icon {
+  background-image: url(../i/sprite.png);
+  background-position: -120px -32px;
+  width: 52px;
+  height: 49px; }
+
 .icon-Next-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -181px -32px;
+  background-position: -60px -95px;
   width: 11px;
   height: 19px; }
 
 .icon-Previous-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -192px -32px;
+  background-position: -202px -81px;
   width: 11px;
   height: 19px; }
 
 .icon-Scroll-Down-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -203px -32px;
+  background-position: -71px -95px;
   width: 18px;
   height: 11px; }
 
@@ -80,15 +98,21 @@ The `sprites` mixin generates identical output to the CSS template
   width: 102px;
   height: 32px; }
 
+.icon-Working-Hours {
+  background-image: url(../i/sprite.png);
+  background-position: -60px -60px;
+  width: 52px;
+  height: 35px; }
+
 .icon-building {
   background-image: url(../i/sprite.png);
-  background-position: -120px -61px;
+  background-position: 0px -149px;
   width: 26px;
   height: 33px; }
 
 .icon-cup {
   background-image: url(../i/sprite.png);
-  background-position: -151px -32px;
+  background-position: 0px -120px;
   width: 30px;
   height: 29px; }
 
@@ -100,13 +124,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-facebook-sm {
   background-image: url(../i/sprite.png);
-  background-position: -198px -61px;
+  background-position: -213px -81px;
   width: 9px;
   height: 13px; }
 
 .icon-gplus-sm {
   background-image: url(../i/sprite.png);
-  background-position: -146px -61px;
+  background-position: -56px -120px;
   width: 13px;
   height: 13px; }
 
@@ -118,19 +142,19 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-linkedin-sm {
   background-image: url(../i/sprite.png);
-  background-position: -159px -61px;
+  background-position: -43px -120px;
   width: 13px;
   height: 13px; }
 
 .icon-pinterest-sm {
   background-image: url(../i/sprite.png);
-  background-position: -172px -61px;
+  background-position: -30px -120px;
   width: 13px;
   height: 13px; }
 
 .icon-twitter-sm {
   background-image: url(../i/sprite.png);
-  background-position: -185px -61px;
+  background-position: -69px -120px;
   width: 13px;
   height: 13px; }
 
@@ -202,15 +226,16 @@ body {
 a {
   text-decoration: none; }
 
-.clearfix:before, .l-header:before, .l-about:before, .l-about--diagram:before,
+.clearfix:before, .l-header:before, .l-about:before, .l-about--diagram:before, .l-trivia--stats-item:before,
 .clearfix:after,
 .l-header:after,
 .l-about:after,
-.l-about--diagram:after {
+.l-about--diagram:after,
+.l-trivia--stats-item:after {
   content: "";
   display: table; }
 
-.clearfix:after, .l-header:after, .l-about:after, .l-about--diagram:after {
+.clearfix:after, .l-header:after, .l-about:after, .l-about--diagram:after, .l-trivia--stats-item:after {
   clear: both; }
 
 .truncate {
@@ -685,3 +710,81 @@ a {
 
 .l-clients--gallery-item {
   margin: 15px; }
+
+.l-trivia {
+  padding: 100px 0;
+  text-align: center;
+  vertical-align: middle;
+  background-image: url("../i/trivia-bg-dummy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.l-trivia--stats {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center; }
+
+.l-trivia--stats-item {
+  min-width: 270px;
+  margin-right: 30px; }
+  .l-trivia--stats-item:last-child {
+    margin-right: 0; }
+  .l-trivia--stats-item:first-child {
+    margin-left: 15px; }
+
+.l-trivia--stats-item--pic {
+  float: left; }
+
+.l-trivia--stats-item--data {
+  text-align: left;
+  padding-left: 80px; }
+
+.l-trivia--stats-item--number {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 0.7; }
+
+.l-trivia--stats-item--name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #c59a6d;
+  line-height: 3em; }
+
+.l-contact {
+  padding: 100px 0;
+  text-align: center;
+  vertical-align: middle; }
+
+.l-contact--form {
+  width: 100%;
+  margin-top: 40px; }
+  .l-contact--form input:nth-child(3) {
+    margin-right: 0; }
+
+.l-contact--form--input--name,
+.l-contact--form--input--email,
+.l-contact--form--input--phone {
+  width: 370px;
+  font-size: 14px;
+  color: #777;
+  background-color: #f6f6f6;
+  outline: none;
+  padding: 15px;
+  border: 1px solid  #ccc;
+  float: left;
+  margin: 30px 30px 30px 0; }
+
+.l-contact--form--input--message {
+  width: 100%;
+  min-height: 198px;
+  font: normal 14px Open Sans, sans-serif;
+  color: #777;
+  background-color: #f6f6f6;
+  resize: none;
+  padding: 15px;
+  border: 1px solid  #ccc; }
+
+.l-contact--form--button {
+  padding-top: 75px; }
