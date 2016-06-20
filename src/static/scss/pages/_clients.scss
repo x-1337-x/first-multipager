@@ -1,0 +1,46 @@
+.l-clients {
+  padding: 100px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.l-clients--slider {
+  padding: 70px 200px 90px;
+}
+
+.l-clients--slider-item {
+  padding: 10px 0 70px;
+}
+
+.l-clients--divider {
+  width: 170px;
+  border-bottom: 1px solid  #ccc;
+  display: inline-block;
+}
+
+.l-clients--slider--indicator {
+  padding-bottom: 90px;
+}
+
+.l-clients--slider--indicator--dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid  #ccc;
+  margin: 0 5px;
+}
+
+.l-clients--slider--indicator--dot__current {
+  border: 1px solid $color-light-brown;
+  background-color: $color-light-brown;
+}
+
+.l-clients--gallery {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+}
+
+.l-clients--gallery-item {
+  margin: 15px;
+}
