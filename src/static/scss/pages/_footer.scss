@@ -1,0 +1,16 @@
+.l-footer {
+  padding: 50px 0;
+  @extend .clearfix;
+}
+
+.l-footer--copyright {
+  float: left;
+}
+
+.l-footer--social {
+  float: right;
+
+  span {
+    margin: 0 5px;
+  }
+}
