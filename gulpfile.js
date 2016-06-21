@@ -84,7 +84,7 @@ gulp.task('dev:sprite', function () {
     .pipe(gulp.dest( './src/static/i/')); 
   
   var cssStream = spriteData.css
-    .pipe(gulp.dest( './src/static/scss/utils' ));
+    .pipe(gulp.dest( './src/static/scss/abstracts' ));
    
   return merge(imgStream, cssStream);
 
@@ -105,7 +105,7 @@ gulp.task('dev:serve', function() {
 
   watch([
     "./src/static/scss/**/*.scss", 
-    "!./src/static/scss/utils/_sprite.scss"
+    "!./src/static/scss/abstracts/_sprite.scss"
   ], function() {
     runSequence('dev:sprite', 'dev:css');
   });

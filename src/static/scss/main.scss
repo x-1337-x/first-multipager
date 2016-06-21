@@ -1,21 +1,26 @@
-@import './utils/variables';
-@import './utils/sprite';
+@import './abstracts/variables';
+@import './abstracts/sprite';
 @include sprites($spritesheet-sprites);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,600);
 
 @import './base/reset';
 @import './base/base';
-@import './components/components';
 
-@import './pages/header';
-@import './pages/home';
-@import './pages/hero';
-@import './pages/about';
-@import './pages/works';
-@import './pages/services';
-@import './pages/video';
-@import './pages/clients';
-@import './pages/trivia';
-@import './pages/contact';
-@import './pages/find-us';
-@import './pages/footer';
+@import './components/c-small-components';
+@import './components/c-blog-article';
+
+@import './layout/l-header';
+@import './layout/l-home';
+@import './layout/l-hero';
+@import './layout/l-about';
+@import './layout/l-works';
+@import './layout/l-services';
+@import './layout/l-video';
+@import './layout/l-clients';
+@import './layout/l-trivia';
+@import './layout/l-contact';
+@import './layout/l-find-us';
+@import './layout/l-footer';
+
+@import './layout/l-blog-header';
+@import './layout/l-blog-articles';

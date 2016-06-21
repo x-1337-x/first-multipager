@@ -70,7 +70,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-Flag-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -38px -120px;
+  background-position: -73px -120px;
   width: 31px;
   height: 29px; }
 
@@ -82,7 +82,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-Next-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -65px -158px;
+  background-position: -11px -200px;
   width: 11px;
   height: 19px; }
 
@@ -98,15 +98,21 @@ The `sprites` mixin generates identical output to the CSS template
   width: 38px;
   height: 38px; }
 
+.icon-Play-Icon {
+  background-image: url(../i/sprite.png);
+  background-position: -222px -33px;
+  width: 26px;
+  height: 29px; }
+
 .icon-Previous-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -54px -158px;
+  background-position: 0px -200px;
   width: 11px;
   height: 19px; }
 
 .icon-Scroll-Down-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -201px -120px;
+  background-position: -86px -158px;
   width: 18px;
   height: 11px; }
 
@@ -122,15 +128,21 @@ The `sprites` mixin generates identical output to the CSS template
   width: 52px;
   height: 35px; }
 
-.icon-building {
+.icon-audio-icon {
   background-image: url(../i/sprite.png);
   background-position: -28px -158px;
+  width: 28px;
+  height: 31px; }
+
+.icon-building {
+  background-image: url(../i/sprite.png);
+  background-position: -222px 0px;
   width: 26px;
   height: 33px; }
 
 .icon-cup {
   background-image: url(../i/sprite.png);
-  background-position: -69px -120px;
+  background-position: -104px -120px;
   width: 30px;
   height: 29px; }
 
@@ -140,41 +152,59 @@ The `sprites` mixin generates identical output to the CSS template
   width: 60px;
   height: 60px; }
 
+.icon-doc-Icon {
+  background-image: url(../i/sprite.png);
+  background-position: -222px -62px;
+  width: 24px;
+  height: 29px; }
+
 .icon-dribble-dark {
   background-image: url(../i/sprite.png);
-  background-position: -99px -120px;
+  background-position: -222px -159px;
   width: 17px;
   height: 17px; }
 
 .icon-facebook-sm {
   background-image: url(../i/sprite.png);
-  background-position: -111px -95px;
+  background-position: -239px -91px;
   width: 9px;
   height: 13px; }
 
 .icon-fb-dark {
   background-image: url(../i/sprite.png);
-  background-position: -77px -95px;
+  background-position: -164px -120px;
   width: 17px;
   height: 17px; }
 
 .icon-flickr-dark {
   background-image: url(../i/sprite.png);
-  background-position: -116px -120px;
+  background-position: -222px -176px;
   width: 17px;
   height: 17px; }
 
+.icon-folder-sm {
+  background-image: url(../i/sprite.png);
+  background-position: -71px -158px;
+  width: 15px;
+  height: 15px; }
+
 .icon-gplus-dark {
   background-image: url(../i/sprite.png);
-  background-position: -133px -120px;
+  background-position: -222px -91px;
   width: 17px;
   height: 17px; }
 
 .icon-gplus-sm {
   background-image: url(../i/sprite.png);
-  background-position: -102px -158px;
+  background-position: -82px -173px;
   width: 13px;
   height: 13px; }
+
+.icon-image-icon {
+  background-image: url(../i/sprite.png);
+  background-position: -38px -120px;
+  width: 35px;
+  height: 29px; }
 
 .icon-light-bulb {
   background-image: url(../i/sprite.png);
@@ -184,49 +214,73 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-linkedin-dark {
   background-image: url(../i/sprite.png);
-  background-position: -94px -95px;
+  background-position: -181px -120px;
   width: 17px;
   height: 17px; }
 
 .icon-linkedin-sm {
   background-image: url(../i/sprite.png);
-  background-position: -89px -158px;
+  background-position: -95px -173px;
   width: 13px;
   height: 13px; }
 
+.icon-message-sm {
+  background-image: url(../i/sprite.png);
+  background-position: -198px -120px;
+  width: 15px;
+  height: 15px; }
+
 .icon-pinterest-dark {
   background-image: url(../i/sprite.png);
-  background-position: -167px -120px;
+  background-position: -92px -95px;
   width: 17px;
   height: 17px; }
 
 .icon-pinterest-sm {
   background-image: url(../i/sprite.png);
-  background-position: -76px -158px;
+  background-position: -69px -173px;
   width: 13px;
   height: 13px; }
 
+.icon-quote-icon {
+  background-image: url(../i/sprite.png);
+  background-position: -134px -120px;
+  width: 30px;
+  height: 26px; }
+
 .icon-rss-dark {
   background-image: url(../i/sprite.png);
-  background-position: -184px -120px;
+  background-position: -222px -142px;
   width: 17px;
   height: 17px; }
 
 .icon-twitter-dark {
   background-image: url(../i/sprite.png);
-  background-position: -150px -120px;
+  background-position: -222px -108px;
   width: 17px;
   height: 17px; }
 
 .icon-twitter-sm {
   background-image: url(../i/sprite.png);
-  background-position: -115px -158px;
+  background-position: -56px -173px;
   width: 13px;
   height: 13px; }
 
-.icon-vk-dark {
+.icon-user-sm {
+  background-image: url(../i/sprite.png);
+  background-position: -56px -158px;
+  width: 15px;
+  height: 15px; }
+
+.icon-video-icon {
   background-image: url(../i/sprite.png);
   background-position: -60px -95px;
+  width: 32px;
+  height: 23px; }
+
+.icon-vk-dark {
+  background-image: url(../i/sprite.png);
+  background-position: -222px -125px;
   width: 17px;
   height: 17px; }
 
@@ -325,6 +379,10 @@ a {
   font-weight: bold;
   background-color: #c59a6d; }
 
+.c-btn__black {
+  background-color: #1a1918;
+  font-size: 14px; }
+
 .c-header-dark {
   font-size: 56px;
   color: #000; }
@@ -342,6 +400,126 @@ a {
   font-size: 16px;
   font-weight: 600;
   color: #fff; }
+
+.c-blog-article {
+  width: 800px;
+  padding-bottom: 85px; }
+
+.c-blog-article--picture {
+  padding-bottom: 50px; }
+
+.c-blog-article--slider {
+  position: relative;
+  padding-bottom: 50px; }
+
+.c-blog-article--slider--controls {
+  position: absolute;
+  right: 60px;
+  top: 295px; }
+
+.c-blog-article--slider--controls--leftarrow,
+.c-blog-article--slider--controls--rightarrow {
+  border: 1px solid  #fff;
+  display: inline-block;
+  margin: 10px;
+  background-color: #2c2b29; }
+  .c-blog-article--slider--controls--leftarrow a,
+  .c-blog-article--slider--controls--rightarrow a {
+    display: block;
+    padding: 15px 21px; }
+
+.c-blog-article--slider--indicator {
+  position: absolute;
+  top: 350px;
+  left: 30px; }
+
+.c-blog-article--slider--indicator--dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid  #fff;
+  background-color: #2c2b29;
+  margin: 0 5px 0 0; }
+
+.c-blog-article--slider--indicator--dot__current {
+  border: 1px solid #c69f76;
+  background-color: #c69f76; }
+
+.c-blog-article--video {
+  padding-bottom: 50px;
+  position: relative; }
+
+.c-blog-article--video--play-button {
+  position: absolute;
+  top: 35%;
+  left: 42%;
+  border: 1px solid  #fff;
+  display: inline-block;
+  margin: 10px;
+  background-color: rgba(44, 43, 41, 0.9); }
+  .c-blog-article--video--play-button a {
+    display: block;
+    padding: 15px 21px; }
+
+.c-blog-article--quote {
+  margin-left: 100px;
+  margin-right: 15px;
+  padding: 15px;
+  background-color: #f6f6f6; }
+
+.c-blog-article--quote-content {
+  border: 1px solid  #c79a6a;
+  padding: 30px; }
+
+.c-blog-article--date {
+  border: 1px solid #ccc;
+  text-align: center;
+  float: left;
+  padding: 15px; }
+
+.c-blog-article--date-day {
+  font-size: 32px;
+  font-weight: 700; }
+
+.c-blog-article--date-month {
+  font-size: 16px;
+  font-weight: 700;
+  color: #c5996c; }
+
+.c-blog-article--text {
+  margin-left: 100px;
+  padding-right: 50px; }
+
+.c-blog-article--text--header {
+  font-size: 24px;
+  font-weight: 700;
+  color: #c5996c;
+  line-height: 1em;
+  padding-bottom: 30px; }
+
+.c-blog-article--text--info-bar {
+  padding-bottom: 25px; }
+  .c-blog-article--text--info-bar a {
+    font-size: 14px;
+    color: #777777; }
+  .c-blog-article--text--info-bar span {
+    vertical-align: text-bottom; }
+  .c-blog-article--text--info-bar span:nth-child(odd) {
+    margin-right: 5px; }
+  .c-blog-article--text--info-bar span:nth-child(even) {
+    margin-right: 20px; }
+
+.c-blog-article--text--divider {
+  width: 70px;
+  border-bottom: 1px solid #c69b6e; }
+
+.c-blog-article--text--body {
+  padding-top: 30px;
+  font-size: 16px;
+  color: #191918; }
+
+.c-blog-article--button-more {
+  padding-top: 45px; }
 
 .l-header {
   background-color: #2c2b2a;
@@ -906,3 +1084,13 @@ a {
   float: right; }
   .l-footer--social span {
     margin: 0 5px; }
+
+.l-blog-header {
+  margin-top: 109px;
+  padding: 100px 0;
+  text-align: center;
+  vertical-align: middle; }
+
+.l-blog-articles {
+  width: 800px;
+  float: left; }
