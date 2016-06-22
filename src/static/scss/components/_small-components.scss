@@ -7,9 +7,27 @@
   background-color: $color-light-brown;
 }
 
+.c-btn-sm {
+  color: #fff;
+  line-height: 3em;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: $color-light-brown;
+}
+
 .c-btn__black {
   background-color: #1a1918;
   font-size: 14px;
+}
+
+.c-tag {
+  color: #fff;
+  line-height: 3em;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #1a1918;  
 }
 
 .c-header-dark {

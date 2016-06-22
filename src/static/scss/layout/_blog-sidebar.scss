@@ -1,0 +1,9 @@
+.l-blog-sidebar {
+  width: 300px;
+  float: right;
+  @extend .clearfix;
+}
+
+.l-blog-sidebar-container {
+  padding: 35px 0;
+}

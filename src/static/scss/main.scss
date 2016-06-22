@@ -6,21 +6,23 @@
 @import './base/reset';
 @import './base/base';
 
-@import './components/c-small-components';
-@import './components/c-blog-article';
+@import './components/small-components';
+@import './components/blog-article';
+@import './components/blog-sidebar-items';
+@import './components/blog-pagination';
 
-@import './layout/l-header';
-@import './layout/l-home';
-@import './layout/l-hero';
-@import './layout/l-about';
-@import './layout/l-works';
-@import './layout/l-services';
-@import './layout/l-video';
-@import './layout/l-clients';
-@import './layout/l-trivia';
-@import './layout/l-contact';
-@import './layout/l-find-us';
-@import './layout/l-footer';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/works';
+@import './layout/services';
+@import './layout/video';
+@import './layout/clients';
+@import './layout/trivia';
+@import './layout/contact';
+@import './layout/find-us';
+@import './layout/footer';
 
-@import './layout/l-blog-header';
-@import './layout/l-blog-articles';
+@import './layout/blog-header';
+@import './layout/blog-articles';
+@import './layout/blog-sidebar';
