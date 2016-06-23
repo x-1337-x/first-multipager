@@ -159,3 +159,28 @@
   padding-top: 45px;
 }
 
+.c-blog-article--social-block {
+  @extend .clearfix;
+  padding-top: 40px;
+
+  a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #191918;
+    text-align: center;
+    padding-top: 3px;
+    float: left;
+  }
+}
+
+.c-blog-article--social-block-counter {
+  float: left;
+  height: 25px;
+  font-size: 12px;
+  color: #777;
+  line-height: 2em;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  margin: 0 15px 0 5px;
+}
