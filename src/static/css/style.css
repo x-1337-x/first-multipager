@@ -70,7 +70,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-Envelope-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -116px -158px;
+  background-position: -132px -158px;
   width: 16px;
   height: 14px; }
 
@@ -94,7 +94,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-Next-Icon {
   background-image: url(../i/sprite.png);
-  background-position: 0px -200px;
+  background-position: -11px -200px;
   width: 11px;
   height: 19px; }
 
@@ -124,19 +124,19 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-Previous-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -11px -200px;
+  background-position: 0px -200px;
   width: 11px;
   height: 19px; }
 
 .icon-Scroll-Down-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -132px -158px;
+  background-position: -148px -158px;
   width: 18px;
   height: 11px; }
 
 .icon-Search-Icon {
   background-image: url(../i/sprite.png);
-  background-position: -56px -158px;
+  background-position: -72px -158px;
   width: 15px;
   height: 16px; }
 
@@ -164,6 +164,12 @@ The `sprites` mixin generates identical output to the CSS template
   width: 26px;
   height: 33px; }
 
+.icon-close {
+  background-image: url(../i/sprite.png);
+  background-position: -198px -120px;
+  width: 16px;
+  height: 17px; }
+
 .icon-cup {
   background-image: url(../i/sprite.png);
   background-position: -104px -120px;
@@ -184,7 +190,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-dribble-dark {
   background-image: url(../i/sprite.png);
-  background-position: -164px -120px;
+  background-position: -222px -142px;
   width: 17px;
   height: 17px; }
 
@@ -202,7 +208,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-fb-dark {
   background-image: url(../i/sprite.png);
-  background-position: -222px -176px;
+  background-position: -222px -159px;
   width: 17px;
   height: 17px; }
 
@@ -214,25 +220,25 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-flickr-dark {
   background-image: url(../i/sprite.png);
-  background-position: -92px -95px;
+  background-position: -181px -120px;
   width: 17px;
   height: 17px; }
 
 .icon-folder-sm {
   background-image: url(../i/sprite.png);
-  background-position: -71px -158px;
+  background-position: -117px -158px;
   width: 15px;
   height: 15px; }
 
 .icon-gplus-dark {
   background-image: url(../i/sprite.png);
-  background-position: -222px -142px;
+  background-position: -222px -125px;
   width: 17px;
   height: 17px; }
 
 .icon-gplus-light {
   background-image: url(../i/sprite.png);
-  background-position: -198px -120px;
+  background-position: -56px -158px;
   width: 16px;
   height: 16px; }
 
@@ -256,31 +262,31 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-linkedin-dark {
   background-image: url(../i/sprite.png);
-  background-position: -222px -125px;
+  background-position: -222px -91px;
   width: 17px;
   height: 17px; }
 
 .icon-linkedin-sm {
   background-image: url(../i/sprite.png);
-  background-position: -35px -200px;
+  background-position: -22px -200px;
   width: 13px;
   height: 13px; }
 
 .icon-message-sm {
   background-image: url(../i/sprite.png);
-  background-position: -86px -158px;
+  background-position: -102px -158px;
   width: 15px;
   height: 15px; }
 
 .icon-pinterest-dark {
   background-image: url(../i/sprite.png);
-  background-position: -181px -120px;
+  background-position: -92px -95px;
   width: 17px;
   height: 17px; }
 
 .icon-pinterest-sm {
   background-image: url(../i/sprite.png);
-  background-position: -22px -200px;
+  background-position: -35px -200px;
   width: 13px;
   height: 13px; }
 
@@ -292,7 +298,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-rss-dark {
   background-image: url(../i/sprite.png);
-  background-position: -222px -108px;
+  background-position: -222px -176px;
   width: 17px;
   height: 17px; }
 
@@ -304,7 +310,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-twitter-dark {
   background-image: url(../i/sprite.png);
-  background-position: -222px -159px;
+  background-position: -222px -108px;
   width: 17px;
   height: 17px; }
 
@@ -322,13 +328,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-ul-marker, .c-blog-post-body ul > li:before {
   background-image: url(../i/sprite.png);
-  background-position: -150px -158px;
+  background-position: -166px -158px;
   width: 12px;
   height: 10px; }
 
 .icon-user-sm {
   background-image: url(../i/sprite.png);
-  background-position: -101px -158px;
+  background-position: -87px -158px;
   width: 15px;
   height: 15px; }
 
@@ -340,7 +346,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-vk-dark {
   background-image: url(../i/sprite.png);
-  background-position: -222px -91px;
+  background-position: -164px -120px;
   width: 17px;
   height: 17px; }
 
@@ -433,6 +439,9 @@ a {
   white-space: wrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+.hidden {
+  display: none; }
 
 .c-btn {
   color: #fff;
@@ -1031,6 +1040,150 @@ a {
   padding-top: 50px; }
   .c-blog-post--reply--button a {
     font-size: 14px; }
+
+.blog-popup-container {
+  width: 100%;
+  background-color: rgba(29, 28, 26, 0.9);
+  text-align: center;
+  padding: 150px 0; }
+
+.blog-popup {
+  width: 1030px;
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative; }
+
+.c-blog-popup--slider {
+  width: 970px;
+  position: relative;
+  padding-bottom: 50px; }
+
+.c-blog-popup--slider--controls {
+  position: absolute;
+  right: 30px;
+  top: 435px; }
+
+.c-blog-popup--slider--controls--leftarrow,
+.c-blog-popup--slider--controls--rightarrow {
+  border: 1px solid  #fff;
+  display: inline-block;
+  margin: 10px;
+  background-color: #2c2b29; }
+  .c-blog-popup--slider--controls--leftarrow a,
+  .c-blog-popup--slider--controls--rightarrow a {
+    display: block;
+    padding: 15px 21px; }
+
+.c-blog-popup--slider--indicator {
+  position: absolute;
+  top: 490px;
+  left: 30px; }
+
+.c-blog-popup--slider--indicator--dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid  #fff;
+  background-color: #2c2b29;
+  margin: 0 5px 0 0; }
+
+.c-blog-popup--slider--indicator--dot__current {
+  border: 1px solid #c69f76;
+  background-color: #c69f76; }
+
+.blog-pupup--text {
+  text-align: left;
+  width: 570px;
+  float: left; }
+
+.c-blog-popup--text--body {
+  font-size: 16px;
+  color: #191918; }
+
+.blog-pupup--infographics {
+  background-color: #f6f6f6;
+  padding: 30px;
+  margin-top: 50px; }
+
+.blog-pupup--infographics--bar {
+  padding: 15px 0; }
+
+.blog-pupup--infographics-text__lg,
+.blog-pupup--infographics-text__md,
+.blog-pupup--infographics-text__sm {
+  color: #191918;
+  display: inline-block; }
+
+.blog-pupup--infographics-text__lg,
+.blog-pupup--infographics-text__md {
+  font-weight: 700; }
+
+.blog-pupup--infographics-text__lg {
+  font-size: 32px; }
+
+.blog-pupup--infographics-text__md {
+  font-size: 14px; }
+
+.blog-pupup--infographics-text__sm {
+  font-size: 14px; }
+
+.blog-pupup--infographics--bar__bgnd {
+  background-color: #191918;
+  padding: 3px 5px; }
+
+.blog-pupup--infographics--bar__filler {
+  height: 5px;
+  background-color: #c59a6d; }
+  .blog-pupup--infographics--bar__filler.PS {
+    width: 98%; }
+  .blog-pupup--infographics--bar__filler.design {
+    width: 75%; }
+
+.c-blog-popup--info {
+  float: right;
+  width: 300px;
+  text-align: left;
+  margin-left: 50px; }
+
+.c-blog-popup--info-data {
+  padding: 10px 0; }
+
+.c-blog-popup--info-text,
+.c-blog-popup--info-text__emph {
+  font-size: 14px;
+  color: #191918; }
+
+.c-blog-popup--info-text__emph {
+  font-weight: 700; }
+
+.c-blog-popup--controls {
+  width: 100%;
+  padding-top: 100px; }
+
+.c-blog-popup--controls-previous {
+  float: left; }
+
+.c-blog-popup--controls-next {
+  float: right; }
+
+.c-blog-popup--controls--text {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #c5996c; }
+
+.c-blog-popup--close-button {
+  position: absolute;
+  background-color: #c59a6d;
+  right: -46px;
+  top: 0px; }
+  .c-blog-popup--close-button a {
+    display: block;
+    line-height: 0;
+    padding: 15px; }
 
 .l-header {
   background-color: #2c2b2a;
