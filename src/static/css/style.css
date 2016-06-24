@@ -454,6 +454,9 @@ a {
   background-color: #1a1918;
   font-size: 14px; }
 
+.c-btn__comment {
+  background-color: #c59a6d; }
+
 .c-tag {
   color: #fff;
   line-height: 3em;
@@ -950,6 +953,84 @@ a {
 
 .c-blog-post--related--button-more {
   margin-top: 40px; }
+
+.c-blog-post--comments {
+  padding: 100px 0; }
+
+.c-blog-post--comment {
+  border: 1px solid  #ccc;
+  padding: 30px;
+  margin-bottom: 30px; }
+
+.c-blog-post--comment--avtar {
+  float: left; }
+
+.c-blog-post--comment--text {
+  margin-left: 75px; }
+
+.c-blog-post--comment--header {
+  padding-bottom: 20px; }
+
+.c-blog-post--comment-username {
+  font-size: 16px;
+  font-weight: 700;
+  color: #262626;
+  display: inline-block; }
+
+.c-blog-post--comment-info {
+  font-size: 14px;
+  color: #777;
+  display: inline-block; }
+
+.c-blog-post--comment--body {
+  font-size: 14px;
+  color: #191918; }
+
+.c-blog-post--comment--button-more {
+  margin-top: 20px; }
+
+.c-blog-post--reply {
+  padding-bottom: 100px;
+  text-align: left;
+  vertical-align: middle; }
+
+.c-blog-post--reply--text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #191918; }
+
+.c-blog-post--reply--form {
+  width: 100%;
+  margin-top: 30px; }
+  .c-blog-post--reply--form input:nth-child(2) {
+    margin-right: 0; }
+
+.c-blog-post--reply--input--name,
+.c-blog-post--reply--input--email {
+  width: 385px;
+  font-size: 14px;
+  color: #777;
+  background-color: #f6f6f6;
+  outline: none;
+  padding: 15px;
+  border: 1px solid  #ccc;
+  float: left;
+  margin: 30px 30px 30px 0; }
+
+.c-blog-post--reply--input--message {
+  width: 100%;
+  min-height: 198px;
+  font: normal 14px Open Sans, sans-serif;
+  color: #777;
+  background-color: #f6f6f6;
+  resize: none;
+  padding: 15px;
+  border: 1px solid  #ccc; }
+
+.c-blog-post--reply--button {
+  padding-top: 50px; }
+  .c-blog-post--reply--button a {
+    font-size: 14px; }
 
 .l-header {
   background-color: #2c2b2a;
