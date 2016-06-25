@@ -1,11 +1,12 @@
-.blog-popup-container {
+.portfolio-popup-container {
   width: 100%;
   background-color: rgba(#1d1c1a, 0.9);
   text-align: center;
   padding: 150px 0;
+  z-index: 3000;
 }
 
-.blog-popup {
+.portfolio-popup {
   width: 1030px;
   text-align: center;
   padding: 30px;
@@ -14,20 +15,20 @@
   position: relative;
 }
 
-.c-blog-popup--slider {
+.c-portfolio-popup--slider {
   width: 970px;
   position: relative;
   padding-bottom: 50px;
 }
 
-.c-blog-popup--slider--controls {
+.c-portfolio-popup--slider--controls {
   position: absolute;
   right: 30px;
   top: 435px
 }
 
-.c-blog-popup--slider--controls--leftarrow,
-.c-blog-popup--slider--controls--rightarrow {
+.c-portfolio-popup--slider--controls--leftarrow,
+.c-portfolio-popup--slider--controls--rightarrow {
   border: 1px solid  #fff;
   display: inline-block;
   margin: 10px;
@@ -39,13 +40,13 @@
   }
 }
 
-.c-blog-popup--slider--indicator {
+.c-portfolio-popup--slider--indicator {
   position: absolute;
   top: 490px;
   left: 30px;
 }
 
-.c-blog-popup--slider--indicator--dot {
+.c-portfolio-popup--slider--indicator--dot {
   display: inline-block;
   width: 8px;
   height: 8px;
@@ -54,64 +55,64 @@
   margin: 0 5px 0 0;
 }
 
-.c-blog-popup--slider--indicator--dot__current {
+.c-portfolio-popup--slider--indicator--dot__current {
   border: 1px solid #c69f76;
   background-color: #c69f76;
 }
 
-.blog-pupup--text {
+.portfolio-pupup--text {
   text-align: left;
   width: 570px;
   float: left;
 }
 
-.c-blog-popup--text--body {
+.c-portfolio-popup--text--body {
   font-size: 16px;
   color: #191918;
 }
 
-.blog-pupup--infographics {
+.portfolio-pupup--infographics {
   background-color: #f6f6f6;
   padding: 30px;
   margin-top: 50px;
 }
 
-.blog-pupup--infographics--bar {
+.portfolio-pupup--infographics--bar {
   padding: 15px 0;
 }
 
-.blog-pupup--infographics-text__lg,
-.blog-pupup--infographics-text__md,
-.blog-pupup--infographics-text__sm {
+.portfolio-pupup--infographics-text__lg,
+.portfolio-pupup--infographics-text__md,
+.portfolio-pupup--infographics-text__sm {
   color: #191918;
   display: inline-block;
 }
 
-.blog-pupup--infographics-text__lg,
-.blog-pupup--infographics-text__md {
+.portfolio-pupup--infographics-text__lg,
+.portfolio-pupup--infographics-text__md {
   font-weight: 700; 
 }
 
 
 
-.blog-pupup--infographics-text__lg {
+.portfolio-pupup--infographics-text__lg {
   font-size: 32px;
 }
 
-.blog-pupup--infographics-text__md {
+.portfolio-pupup--infographics-text__md {
   font-size: 14px;
 }
 
-.blog-pupup--infographics-text__sm {
+.portfolio-pupup--infographics-text__sm {
   font-size: 14px;
 }
 
-.blog-pupup--infographics--bar__bgnd {
+.portfolio-pupup--infographics--bar__bgnd {
   background-color: #191918;
   padding: 3px 5px;
 }
 
-.blog-pupup--infographics--bar__filler {
+.portfolio-pupup--infographics--bar__filler {
   height: 5px;
   background-color: $color-light-brown;
 
@@ -124,41 +125,41 @@
   }
 }
 
-.c-blog-popup--info {
+.c-portfolio-popup--info {
   float: right;
   width: 300px;
   text-align: left;
   margin-left: 50px;
 }
 
-.c-blog-popup--info-data {
+.c-portfolio-popup--info-data {
   padding: 10px 0;
 }
 
-.c-blog-popup--info-text,
-.c-blog-popup--info-text__emph {
+.c-portfolio-popup--info-text,
+.c-portfolio-popup--info-text__emph {
   font-size: 14px;
   color: #191918;
 }
 
-.c-blog-popup--info-text__emph {
+.c-portfolio-popup--info-text__emph {
   font-weight: 700;
 }
 
-.c-blog-popup--controls {
+.c-portfolio-popup--controls {
   width: 100%;
   padding-top: 100px;
 }
 
-.c-blog-popup--controls-previous {
+.c-portfolio-popup--controls-previous {
   float: left;
 }
 
-.c-blog-popup--controls-next {
+.c-portfolio-popup--controls-next {
   float: right;
 }
 
-.c-blog-popup--controls--text {
+.c-portfolio-popup--controls--text {
   display: inline-block;
   padding: 0 30px;
   font-size: 18px;
@@ -166,7 +167,7 @@
   color: #c5996c;
 }
 
-.c-blog-popup--close-button {
+.c-portfolio-popup--close-button {
   position: absolute;
   background-color: $color-light-brown;
   right: -46px;
