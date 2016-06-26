@@ -14,5 +14,9 @@
     "test",
     "tests"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "slick-carousel": "^1.6.0",
+    "jQuery": "^3.0.0",
+    "fancyBox": "^2.1.5"
+  }
 }

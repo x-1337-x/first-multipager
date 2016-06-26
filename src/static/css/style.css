@@ -44,6 +44,9 @@ The `sprites` mixin generates identical output to the CSS template
 @include sprites($spritesheet-sprites);
 */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,600);
+@import url(../../../bower_components/slick-carousel/slick/slick.css);
+@import url(../../../bower_components/slick-carousel/slick/slick-theme.css);
+@import url(../../../bower_components/fancyBox/source/jquery.fancybox.css);
 .icon-Awesome-Projects {
   background-image: url(../i/sprite.png);
   background-position: -172px -32px;
@@ -1205,8 +1208,6 @@ a {
 .l-navbar--item {
   display: inline-block;
   padding: 0 10px; }
-  .l-navbar--item:last-child {
-    padding-right: 0; }
   .l-navbar--item a {
     font-size: 14px;
     font-weight: bold;
@@ -1771,3 +1772,29 @@ a {
 .l-blog-post {
   width: 830px;
   float: left; }
+
+.slick-dots li button {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none; }
+
+.slick-dots li button:before {
+  content: ''; }
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #00e0d0;
+  border-radius: 50%;
+  background-color: #00e0d0; }
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  margin: 5px; }

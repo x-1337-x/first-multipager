@@ -29,3 +29,10 @@
 @import './layout/blog-articles';
 @import './layout/blog-sidebar';
 @import './layout/blog-posts';
+
+@import '../../../bower_components/slick-carousel/slick/slick.css';
+@import '../../../bower_components/slick-carousel/slick/slick-theme.css';
+
+@import '../../../bower_components/fancyBox/source/jquery.fancybox.css';
+
+@import './vendors/slick-theme-override';
